@@ -26,6 +26,7 @@ import Swiper from 'react-native-swiper';
 import Day1 from './view/day1';
 import Day2 from './view/day2';
 import Day3 from './view/day3';
+import Day4 from './view/day4';
 
 class MainView extends Component {
   constructor() {
@@ -58,16 +59,16 @@ class MainView extends Component {
         size:50,
         color:"#2aa2ef",
         hideNav: true,
+      },{
+        key:3,
+        title:"cocoapods",
+        component: Day4,
+        isFA: true,
+        icon: "contao",
+        size:50,
+        color:"#FF9A05",
+        hideNav: false,
       }]
-      // },{
-      //   key:3,
-      //   title:"cocoapods",
-      //   component: Day4,
-      //   isFA: true,
-      //   icon: "contao",
-      //   size:50,
-      //   color:"#FF9A05",
-      //   hideNav: false,
       // },{
       //   key:4,
       //   title:"find my location",
