@@ -1,6 +1,6 @@
 /**
  * Day 4
- *
+ * bridge to cocoapods
  */
  import React, { Component } from 'react';
  import {

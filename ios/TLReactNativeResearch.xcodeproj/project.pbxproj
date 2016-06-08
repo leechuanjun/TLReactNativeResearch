@@ -30,8 +30,8 @@
 		7E325AF51D06B5FC006836EE /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E325AED1D06B5FC006836EE /* Octicons.ttf */; };
 		7E325AF61D06B5FC006836EE /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E325AEE1D06B5FC006836EE /* Zocial.ttf */; };
 		7E325AF71D06D58F006836EE /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E325AD01D06B053006836EE /* libRNVectorIcons.a */; };
-		7E325B301D07BA13006836EE /* JTSImagePreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E325B2F1D07BA13006836EE /* JTSImagePreview.m */; };
 		7E325B3D1D07BBD1006836EE /* libJTSImageViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E325B3C1D07BBD1006836EE /* libJTSImageViewController.a */; };
+		7E325BBB1D07FBC8006836EE /* JTSImagePreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E325BBA1D07FBC8006836EE /* JTSImagePreview.m */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		BC3A12D30E258A9B6D3C4DE2 /* libPods-TLReactNativeResearch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E0747C62B100CC2C9C70B99 /* libPods-TLReactNativeResearch.a */; };
 /* End PBXBuildFile section */
@@ -155,9 +155,9 @@
 		7E325AEC1D06B5FC006836EE /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		7E325AED1D06B5FC006836EE /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		7E325AEE1D06B5FC006836EE /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
-		7E325B2E1D07BA13006836EE /* JTSImagePreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTSImagePreview.h; sourceTree = "<group>"; };
-		7E325B2F1D07BA13006836EE /* JTSImagePreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTSImagePreview.m; sourceTree = "<group>"; };
 		7E325B3C1D07BBD1006836EE /* libJTSImageViewController.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJTSImageViewController.a; path = "Build/Products/Debug-iphonesimulator/JTSImageViewController/libJTSImageViewController.a"; sourceTree = "<group>"; };
+		7E325BB91D07FBC8006836EE /* JTSImagePreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTSImagePreview.h; sourceTree = "<group>"; };
+		7E325BBA1D07FBC8006836EE /* JTSImagePreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTSImagePreview.m; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		DB0F5EE6318C0656432ED021 /* Pods-TLReactNativeResearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TLReactNativeResearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TLReactNativeResearch/Pods-TLReactNativeResearch.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -269,6 +269,8 @@
 		13B07FAE1A68108700A75B9A /* TLReactNativeResearch */ = {
 			isa = PBXGroup;
 			children = (
+				7E325BB91D07FBC8006836EE /* JTSImagePreview.h */,
+				7E325BBA1D07FBC8006836EE /* JTSImagePreview.m */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -276,8 +278,6 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
-				7E325B2E1D07BA13006836EE /* JTSImagePreview.h */,
-				7E325B2F1D07BA13006836EE /* JTSImagePreview.m */,
 			);
 			name = TLReactNativeResearch;
 			sourceTree = "<group>";
@@ -695,7 +695,7 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
-				7E325B301D07BA13006836EE /* JTSImagePreview.m in Sources */,
+				7E325BBB1D07FBC8006836EE /* JTSImagePreview.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

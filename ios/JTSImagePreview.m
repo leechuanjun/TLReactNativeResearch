@@ -12,7 +12,8 @@
 #import <JTSImageViewController.h>
 
 @implementation JTSImagePreview
-RCT_EXPORT_MODULE();
+
+RCT_EXPORT_MODULE(JTSImagePreview);
 
 RCT_EXPORT_METHOD(showImage:(NSString *)url)
 {
