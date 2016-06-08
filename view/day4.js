@@ -7,14 +7,15 @@
    StyleSheet,
    View,
    Image,
-   TouchableHighlight
+   TouchableHighlight,
+   NativeModules
  } from 'react-native';
 
 import Util from './utils';
 
 class ShowImg extends Component{
   componentDidMount() {
-    React.NativeModules.JTSImagePreview.showImage('http://i.imgur.com/sKh7Z6R.png');
+    NativeModules.JTSImagePreview.showImage('http://i.imgur.com/sKh7Z6R.png');
   }
 
   render() {
@@ -33,11 +34,14 @@ export default class extends Component{
   }
 
   _onImgPress() {
+    // this.setState({
+    //   show:false
+    // })
+    // this.setState({
+    //   show:true
+    // })
     this.setState({
-      show:false
-    })
-    this.setState({
-      show:true
+      show:!this.state.show
     })
   }
 
