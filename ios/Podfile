@@ -1,0 +1,8 @@
+workspace 'TLReactNativeResearch.xcworkspace'
+
+target 'TLReactNativeResearch' do
+  platform :ios, '7.0'
+  xcodeproj 'TLReactNativeResearch.xcodeproj'
+  pod 'JTSImageViewController', '~> 1.5.1'
+  
+end
