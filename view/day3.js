@@ -1,6 +1,6 @@
 /**
  * Day 3
- *
+ * twitter entrance animation
  */
  import React, { Component } from 'react';
  import {

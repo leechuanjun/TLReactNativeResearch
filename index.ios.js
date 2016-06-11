@@ -14,7 +14,8 @@ import {
   NavigatorIOS,
   TouchableHighlight,
   ScrollView,
-  StatusBarIOS
+  StatusBar,
+  DeviceEventEmitter
 } from 'react-native';
 
 import Util from './view/utils';
@@ -27,6 +28,10 @@ import Day1 from './view/day1';
 import Day2 from './view/day2';
 import Day3 from './view/day3';
 import Day4 from './view/day4';
+import Day5 from './view/day5';
+import Day6 from './view/day6';
+import Day7 from './view/day7';
+import Day8 from './view/day8';
 
 class MainView extends Component {
   constructor() {
@@ -68,43 +73,43 @@ class MainView extends Component {
         size:50,
         color:"#FF9A05",
         hideNav: false,
-      }]
-      // },{
-      //   key:4,
-      //   title:"find my location",
-      //   component: Day5,
-      //   isFA: false,
-      //   icon: "ios-location",
-      //   size:50,
-      //   color:"#00D204",
-      //   hideNav: false,
-      // },{
-      //   key:5,
-      //   title:"Spotify",
-      //   component: Day6,
-      //   isFA: true,
-      //   icon: "spotify",
-      //   size:50,
-      //   color:"#777",
-      //   hideNav: true,
-      // },{
-      //   key:6,
-      //   title:"Moveable Circle",
-      //   component: Day7,
-      //   isFA: false,
-      //   icon: "ios-baseball",
-      //   size:50,
-      //   color:"#5e2a06",
-      //   hideNav: true,
-      // },{
-      //   key:7,
-      //   title:"Swipe Left Menu",
-      //   component: Day8,
-      //   isFA: true,
-      //   icon: "google",
-      //   size:50,
-      //   color:"#4285f4",
-      //   hideNav: true,
+      },{
+        key:4,
+        title:"find my location",
+        component: Day5,
+        isFA: false,
+        icon: "ios-locate",
+        size:50,
+        color:"#00D204",
+        hideNav: false,
+      },{
+        key:5,
+        title:"Spotify",
+        component: Day6,
+        isFA: true,
+        icon: "spotify",
+        size:50,
+        color:"#777",
+        hideNav: true,
+      },{
+        key:6,
+        title:"Moveable Circle",
+        component: Day7,
+        isFA: false,
+        icon: "ios-baseball",
+        size:50,
+        color:"#5e2a06",
+        hideNav: true,
+      },{
+        key:7,
+        title:"Swipe Left Menu",
+        component: Day8,
+        isFA: true,
+        icon: "google",
+        size:50,
+        color:"#4285f4",
+        hideNav: true,
+        }]
       // },{
       //   key:8,
       //   title:"Twitter Parallax View",
@@ -309,23 +314,23 @@ class MainView extends Component {
 
 
   componentWillMount() {
-    // DeviceEventEmitter.addListener(
-    // 'quickActionShortcut', (data) => {
-    //   switch(data.title){
-    //     case "Day5":
-    //       this._jumpToDay(4);
-    //       break;
-    //     case "Day22":
-    //       this._jumpToDay(21);
-    //       break;
-    //     case "Day26":
-    //       this._jumpToDay(25);
-    //       break;
-    //     case "Day28":
-    //       this._jumpToDay(27);
-    //       break;
-    //   }
-    // });
+    DeviceEventEmitter.addListener(
+    'quickActionShortcut', (data) => {
+      switch(data.title){
+        case "Day5":
+          this._jumpToDay(4);
+          break;
+        // case "Day22":
+        //   this._jumpToDay(21);
+        //   break;
+        // case "Day26":
+        //   this._jumpToDay(25);
+        //   break;
+        // case "Day28":
+        //   this._jumpToDay(27);
+        //   break;
+      }
+    });
   }
 
   _jumpToDay(index){
@@ -377,7 +382,7 @@ class MainView extends Component {
 
 class TLReactNativeResearch extends Component{
   componentDidMount() {
-    StatusBarIOS.setStyle(0);
+    StatusBar.setBarStyle(0);
   }
 
   render(){

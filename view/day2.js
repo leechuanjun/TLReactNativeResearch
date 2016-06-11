@@ -1,6 +1,8 @@
 /**
  * Day 2
- *
+ * A weather app
+ * Have trouble completing the animation part
+ * will study on the animation in later experiments
  */
  import React, { Component } from 'react';
  import {
