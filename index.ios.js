@@ -38,6 +38,9 @@ import Day10 from './view/day10';
 import Day11 from './view/day11';
 import Day12 from './view/day12';
 import Day13 from './view/day13';
+import Day14 from './view/day14';
+import Day15 from './view/day15';
+
 
 class MainView extends Component {
   constructor() {
@@ -161,25 +164,25 @@ class MainView extends Component {
         size:50,
         color:"#83709d",
         hideNav: true,
+      },{
+        key:13,
+        title:"tinder",
+        component: Day14,
+        isFA: false,
+        icon: "ios-bonfire",
+        size:50,
+        color:"#ff6b6b",
+        hideNav: true,
+      },{
+        key:14,
+        title:"Time picker",
+        component: Day15,
+        isFA: false,
+        icon: "ios-calendar-outline",
+        size:50,
+        color:"#ec240e",
+        hideNav: false,
         }]
-      // },{
-      //   key:13,
-      //   title:"tinder",
-      //   component: Day14,
-      //   isFA: false,
-      //   icon: "fireball",
-      //   size:50,
-      //   color:"#ff6b6b",
-      //   hideNav: true,
-      // },{
-      //   key:14,
-      //   title:"Time picker",
-      //   component: Day15,
-      //   isFA: false,
-      //   icon: "ios-calendar-outline",
-      //   size:50,
-      //   color:"#ec240e",
-      //   hideNav: false,
       // },{
       //   key:15,
       //   title:"Gesture unlock",
