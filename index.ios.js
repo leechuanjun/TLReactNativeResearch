@@ -20,6 +20,7 @@ import {
 
 import Util from './view/utils';
 import Icon from 'react-native-vector-icons/Ionicons';
+import Zocial from 'react-native-vector-icons/Zocial';
 import IconFA from 'react-native-vector-icons/FontAwesome';
 import Swiper from 'react-native-swiper';
 
@@ -32,6 +33,11 @@ import Day5 from './view/day5';
 import Day6 from './view/day6';
 import Day7 from './view/day7';
 import Day8 from './view/day8';
+import Day9 from './view/day9';
+import Day10 from './view/day10';
+import Day11 from './view/day11';
+import Day12 from './view/day12';
+import Day13 from './view/day13';
 
 class MainView extends Component {
   constructor() {
@@ -109,52 +115,53 @@ class MainView extends Component {
         size:50,
         color:"#4285f4",
         hideNav: true,
+      },{
+        key:8,
+        title:"Twitter Parallax View",
+        component: Day9,
+        isFA: false,
+        icon: "twitter",
+        size:50,
+        color:"#2aa2ef",
+        hideNav: true,
+        outline: true
+      },{
+        key:9,
+        title:"Tumblr Menu",
+        component: Day10,
+        isFA: false,
+        icon: "logo-tumblr",
+        size:50,
+        color:"#37465c",
+        hideNav: true,
+      },{
+        key:10,
+        title:"OpenGL",
+        component: Day11,
+        isFA: false,
+        icon: "ios-contrast",
+        size:50,
+        color:"#2F3600",
+        hideNav: false,
+      },{
+        key:11,
+        title:"charts",
+        component: Day12,
+        isFA: false,
+        icon: "ios-stats",
+        size:50,
+        color:"#fd8f9d",
+        hideNav: false,
+      },{
+        key:12,
+        title:"tweet",
+        component: Day13,
+        isFA: false,
+        icon: "ios-chatboxes",
+        size:50,
+        color:"#83709d",
+        hideNav: true,
         }]
-      // },{
-      //   key:8,
-      //   title:"Twitter Parallax View",
-      //   component: Day9,
-      //   isFA: false,
-      //   icon: "social-twitter-outline",
-      //   size:50,
-      //   color:"#2aa2ef",
-      //   hideNav: true,
-      // },{
-      //   key:9,
-      //   title:"Tumblr Menu",
-      //   component: Day10,
-      //   isFA: false,
-      //   icon: "social-tumblr",
-      //   size:50,
-      //   color:"#37465c",
-      //   hideNav: true,
-      // },{
-      //   key:10,
-      //   title:"OpenGL",
-      //   component: Day11,
-      //   isFA: false,
-      //   icon: "contrast",
-      //   size:50,
-      //   color:"#2F3600",
-      //   hideNav: false,
-      // },{
-      //   key:11,
-      //   title:"charts",
-      //   component: Day12,
-      //   isFA: false,
-      //   icon: "stats-bars",
-      //   size:50,
-      //   color:"#fd8f9d",
-      //   hideNav: false,
-      // },{
-      //   key:12,
-      //   title:"tweet",
-      //   component: Day13,
-      //   isFA: false,
-      //   icon: "chatbox-working",
-      //   size:50,
-      //   color:"#83709d",
-      //   hideNav: true,
       // },{
       //   key:13,
       //   title:"tinder",
@@ -349,7 +356,7 @@ class MainView extends Component {
           <View style={styles.boxContainer}>
             <Text style={styles.boxText}>Day{index+1}</Text>
             {elem.isFA? <IconFA size={elem.size} name={elem.icon} style={[styles.boxIcon,{color:elem.color}]}></IconFA>:
-              <Icon size={elem.size} name={elem.icon} style={[styles.boxIcon,{color:elem.color}]}></Icon>}
+              (index+1===9)?<Zocial size={elem.size} name={elem.icon} style={[styles.boxIcon,{color:elem.color}]}></Zocial>:<Icon size={elem.size} name={elem.icon} style={[styles.boxIcon,{color:elem.color}]}></Icon>}
           </View>
         </TouchableHighlight>
       );

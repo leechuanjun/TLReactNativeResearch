@@ -1,6 +1,9 @@
 package com.tlreactnativeresearch;
 
 import com.facebook.react.ReactActivity;
+import com.brentvatne.RCTVideo.ReactVideoPackage;
+import com.oblador.vectoricons.VectorIconsPackage;
+import com.projectseptember.RNGL.RNGLPackage;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 
@@ -34,7 +37,10 @@ public class MainActivity extends ReactActivity {
     @Override
     protected List<ReactPackage> getPackages() {
         return Arrays.<ReactPackage>asList(
-            new MainReactPackage()
+            new MainReactPackage(),
+            new ReactVideoPackage(),
+            new VectorIconsPackage(),
+            new RNGLPackage()
         );
     }
 }
