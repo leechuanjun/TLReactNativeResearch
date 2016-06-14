@@ -40,7 +40,21 @@ import Day12 from './view/day12';
 import Day13 from './view/day13';
 import Day14 from './view/day14';
 import Day15 from './view/day15';
-
+import Day16 from './view/day16';
+import Day17 from './view/day17';
+import Day18 from './view/day18';
+import Day19 from './view/day19';
+import Day20 from './view/day20';
+import Day21 from './view/day21';
+import Day22 from './view/day22';
+import Day23 from './view/day23';
+import Day24 from './view/day24';
+import Day25 from './view/day25';
+import Day26 from './view/day26';
+import Day27 from './view/day27';
+import Day28 from './view/day28';
+import Day29 from './view/day29';
+import Day30 from './view/day30';
 
 class MainView extends Component {
   constructor() {
@@ -182,143 +196,142 @@ class MainView extends Component {
         size:50,
         color:"#ec240e",
         hideNav: false,
-        }]
-      // },{
-      //   key:15,
-      //   title:"Gesture unlock",
-      //   component: Day16,
-      //   isFA: false,
-      //   icon: "unlocked",
-      //   size:50,
-      //   color:"#32A69B",
-      //   hideNav: true,
-      // },{
-      //   key:16,
-      //   title:"Fuzzy search",
-      //   component: Day17,
-      //   isFA: false,
-      //   icon: "search",
-      //   size:50,
-      //   color:"#69B32A",
-      //   hideNav: false,
-      // },{
-      //   key:17,
-      //   title:"Sortable",
-      //   component: Day18,
-      //   isFA: false,
-      //   icon: "arrow-move",
-      //   size:50,
-      //   color:"#68231A",
-      //   hideNav: true,
-      // },{
-      //   key:18,
-      //   title:"TouchID to unlock",
-      //   component: Day19,
-      //   isFA: false,
-      //   icon: "log-in",
-      //   size:50,
-      //   color:"#fdbded",
-      //   hideNav: true,
-      // },{
-      //   key:19,
-      //   title:"Single page Reminder",
-      //   component: Day20,
-      //   isFA: false,
-      //   icon: "ios-list-outline",
-      //   size:50,
-      //   color:"#68d746",
-      //   hideNav: true,
-      // },{
-      //   key:20,
-      //   title:"Multi page Reminder",
-      //   component: Day21,
-      //   isFA: false,
-      //   icon: "ios-paper-outline",
-      //   size:50,
-      //   color:"#fe952b",
-      //   hideNav: true,
-      // },{
-      //   key:21,
-      //   title:"Google Now",
-      //   component: Day22,
-      //   isFA: false,
-      //   icon: "android-microphone",
-      //   size:50,
-      //   color:"#4285f4",
-      //   hideNav: true,
-      // },{
-      //   key:22,
-      //   title:"Local WebView",
-      //   component: Day23,
-      //   isFA: true,
-      //   icon: "safari",
-      //   size:50,
-      //   color:"#23bfe7",
-      //   hideNav: false,
-      // },{
-      //   key:23,
-      //   title:"Youtube scrollable tab",
-      //   component: Day24,
-      //   isFA: false,
-      //   icon: "social-youtube",
-      //   size:50,
-      //   color:"#e32524",
-      //   hideNav: true,
-      // },{
-      //   key:24,
-      //   title:"custome in-app browser",
-      //   component: Day25,
-      //   isFA: false,
-      //   icon: "ios-world",
-      //   size:50,
-      //   color:"#00ab6b",
-      //   hideNav: true,
-      // },{
-      //   key:25,
-      //   title:"swipe and switch",
-      //   component: Day26,
-      //   isFA: false,
-      //   icon: "shuffle",
-      //   size:50,
-      //   color:"#893D54",
-      //   hideNav: true,
-      // },{
-      //   key:26,
-      //   title:"iMessage Gradient",
-      //   component: Day27,
-      //   isFA: false,
-      //   icon: "ios-chatbubble",
-      //   size:50,
-      //   color:"#248ef5",
-      //   hideNav: false,
-      // },{
-      //   key:27,
-      //   title:"iMessage image picker",
-      //   component: Day28,
-      //   isFA: false,
-      //   icon: "images",
-      //   size:50,
-      //   color:"#f5248e",
-      //   hideNav: true,
-      // },{
-      //   key:28,
-      //   title:"iMessage image picker",
-      //   component: Day29,
-      //   isFA: false,
-      //   icon: "navicon-round",
-      //   size:50,
-      //   color:"#48f52e",
-      //   hideNav: false,
-      // },{
-      //   key:29,
-      //   title:"Push Notifications",
-      //   component: Day30,
-      //   isFA: false,
-      //   icon: "android-notifications",
-      //   size:50,
-      //   color:"#f27405",
-      //   hideNav: false,
-      // }]
+      },{
+        key:15,
+        title:"Gesture unlock",
+        component: Day16,
+        isFA: false,
+        icon: "ios-unlock",
+        size:50,
+        color:"#32A69B",
+        hideNav: true,
+      },{
+        key:16,
+        title:"Fuzzy search",
+        component: Day17,
+        isFA: false,
+        icon: "ios-search",
+        size:50,
+        color:"#69B32A",
+        hideNav: false,
+      },{
+        key:17,
+        title:"Sortable",
+        component: Day18,
+        isFA: false,
+        icon: "ios-move",
+        size:50,
+        color:"#68231A",
+        hideNav: true,
+      },{
+        key:18,
+        title:"TouchID to unlock",
+        component: Day19,
+        isFA: false,
+        icon: "ios-log-in",
+        size:50,
+        color:"#fdbded",
+        hideNav: true,
+      },{
+        key:19,
+        title:"Single page Reminder",
+        component: Day20,
+        isFA: false,
+        icon: "ios-list-outline",
+        size:50,
+        color:"#68d746",
+        hideNav: true,
+      },{
+        key:20,
+        title:"Multi page Reminder",
+        component: Day21,
+        isFA: false,
+        icon: "ios-paper-outline",
+        size:50,
+        color:"#fe952b",
+        hideNav: true,
+      },{
+        key:21,
+        title:"Google Now",
+        component: Day22,
+        isFA: false,
+        icon: "ios-microphone",
+        size:50,
+        color:"#4285f4",
+        hideNav: true,
+      },{
+        key:22,
+        title:"Local WebView",
+        component: Day23,
+        isFA: true,
+        icon: "safari",
+        size:50,
+        color:"#23bfe7",
+        hideNav: false,
+      },{
+        key:23,
+        title:"Youtube scrollable tab",
+        component: Day24,
+        isFA: false,
+        icon: "logo-youtube",
+        size:50,
+        color:"#e32524",
+        hideNav: true,
+      },{
+        key:24,
+        title:"custome in-app browser",
+        component: Day25,
+        isFA: false,
+        icon: "ios-globe",
+        size:50,
+        color:"#00ab6b",
+        hideNav: true,
+      },{
+        key:25,
+        title:"swipe and switch",
+        component: Day26,
+        isFA: false,
+        icon: "ios-shuffle",
+        size:50,
+        color:"#893D54",
+        hideNav: true,
+      },{
+        key:26,
+        title:"iMessage Gradient",
+        component: Day27,
+        isFA: false,
+        icon: "ios-chatbubbles",
+        size:50,
+        color:"#248ef5",
+        hideNav: false,
+      },{
+        key:27,
+        title:"iMessage image picker",
+        component: Day28,
+        isFA: false,
+        icon: "ios-images",
+        size:50,
+        color:"#f5248e",
+        hideNav: true,
+      },{
+        key:28,
+        title:"iMessage image picker",
+        component: Day29,
+        isFA: false,
+        icon: "ios-menu",
+        size:50,
+        color:"#48f52e",
+        hideNav: false,
+      },{
+        key:29,
+        title:"Push Notifications",
+        component: Day30,
+        isFA: false,
+        icon: "ios-notifications",
+        size:50,
+        color:"#f27405",
+        hideNav: false,
+      }]
     }
   }
 
@@ -330,15 +343,15 @@ class MainView extends Component {
         case "Day5":
           this._jumpToDay(4);
           break;
-        // case "Day22":
-        //   this._jumpToDay(21);
-        //   break;
-        // case "Day26":
-        //   this._jumpToDay(25);
-        //   break;
-        // case "Day28":
-        //   this._jumpToDay(27);
-        //   break;
+        case "Day22":
+          this._jumpToDay(21);
+          break;
+        case "Day26":
+          this._jumpToDay(25);
+          break;
+        case "Day28":
+          this._jumpToDay(27);
+          break;
       }
     });
   }
